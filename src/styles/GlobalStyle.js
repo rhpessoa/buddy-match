@@ -1,39 +1,41 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
-/* CSS Reset */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  line-height: 1.5;
-  font-family: sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-ul, ol {
-  list-style: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
+export const GlobalStyle = createGlobalStyle`
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+    background-color: ${({ theme }) => theme.backgroundBase};
+    color: ${({ theme }) => theme.textColorBase};
+  }
+  /* NextJS */
+  html {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  body {
+    display: flex;
+    flex: 1;
+  }
+  #__next {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  /* Globals */
+  button,
+  a {
+    text-decoration: none;
+    opacity: 1;
+    transition: .3s;
+    &:hover,
+    &:focus {
+      opacity: .5;
+    }
+  }
 `;
-export default GlobalStyle;
