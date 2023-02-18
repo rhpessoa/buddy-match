@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    font-family: sans-serif;
+    font-family: 'Jost';
     background-color: ${({ theme }) => theme.backgroundBase};
     color: ${({ theme }) => theme.textColorBase};
   }
