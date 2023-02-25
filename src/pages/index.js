@@ -1,33 +1,16 @@
-import { ColorModeContext } from "../context/ThemeColorContext";
-import { useContext } from "react";
-import { StyledSwitch, HomeContain } from "./indexStyle";
+import { HomeContain } from "./indexStyle";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/Button";
 
 export default function Home() {
-  const contexto = useContext(ColorModeContext);
-
   return (
     <HomeContain>
       <header>
         <Head>
           <title>Buddy Match</title>
         </Head>
-        <StyledSwitch>
-          <input
-            id="darkmode"
-            type="checkbox"
-            onChange={() => {
-              contexto.toggleMode();
-            }}
-          />
-          <label htmlFor="darkmode" className="darkmode-switch">
-            <span>🌙</span>
-            <span>☀️</span>
-          </label>
-        </StyledSwitch>
       </header>
       <section>
         <h1>Buddy Match</h1>

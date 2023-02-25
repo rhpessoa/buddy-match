@@ -9,8 +9,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     font-family: 'Jost';
-    background-color: ${({ theme }) => theme.backgroundBase};
-    color: ${({ theme }) => theme.textColorBase};
+    background-color: "#ffffff";
+    color: "#000000";
   }
   /* NextJS */
   html {
