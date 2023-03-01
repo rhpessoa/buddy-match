@@ -2,11 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   compiler: {
-    styledComponents: {
-      ssr: true,
-      displayName: true,
-      fileName: true,
-    },
+    styledComponents: true,
   },
   images: {
     remotePatterns: [{ hostname: "i.imgur.com" }],
@@ -14,3 +10,4 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+

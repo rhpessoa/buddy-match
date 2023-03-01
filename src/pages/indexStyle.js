@@ -20,11 +20,6 @@ export const HomeContain = styled.div`
     }
     .container__texto {
       margin: 0 3em;
-      span {
-        font-size: 1.25rem;
-        line-height: 29px;
-        font-weight: 300;
-      }
     }
     .container__button {
       margin: 3.56em 0;
@@ -36,6 +31,20 @@ export const HomeContain = styled.div`
         width: 7.75em;
         border-radius: 40px;
         box-shadow: 0px 28px 44px rgba(0, 0, 0, 0.25);
+      }
+    }
+    .experiencia {
+      margin-bottom: 3.3em;
+    }
+    .container__info {
+      margin-bottom: 1.3em;
+    }
+    span {
+      font-size: 1.25rem;
+      line-height: 29px;
+      font-weight: 300;
+      strong {
+        font-weight: 700;
       }
     }
   }
